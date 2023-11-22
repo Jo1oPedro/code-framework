@@ -1,7 +1,7 @@
 {
   "name": "codejr/framework",
   "type": "project",
-  "description": "The skeleton application for the Laravel framework.",
+  "description": "Esqueleto do codejr framework.",
   "license": "proprietary",
   "minimum-stability": "stable",
   "require": {
