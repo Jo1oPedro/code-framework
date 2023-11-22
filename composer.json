@@ -2,6 +2,8 @@
   "name": "codejr/framework",
   "type": "project",
   "description": "The skeleton application for the Laravel framework.",
+  "license": "proprietary",
+  "minimum-stability": "stable",
   "require": {
     "cascata/framework-patterns": "^1.0"
   },
