@@ -1,5 +1,5 @@
 {
-  "name": "codejr/codejr",
+  "name": "codejr/framework",
   "type": "project",
   "description": "The skeleton application for the Laravel framework.",
   "require": {
