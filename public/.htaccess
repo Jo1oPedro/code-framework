@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+        # Se o arquivo existe na raiz, redirecione para 404.php
+        RewriteCond %{REQUEST_FILENAME} -f
+        RewriteCond %{REQUEST_URI} ^/([^/]+)$
+        RewriteRule ^(.*)$ 404.php [L]
+
+        # Redirecionar apenas a raiz para public/index.php
+        RewriteRule ^$ index.php [L]
+
+        # Redirecionar todas as requisições para public/index.php
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule ^(.*)$ index.php [L]
+</IfModule>
